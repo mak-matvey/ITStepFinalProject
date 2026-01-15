@@ -1,0 +1,15 @@
+{
+  "arrivals": [
+    {
+        "id": "1",
+        "airline": "CA722",
+        "destination": "Пекин (Шоуду)",
+        "checkin_counters": ["38", "42", "40", "41"],
+        "boarding_gate": "B7",
+        "departure_time": "18:50",
+        "status": "Посадка окончена"
+      }
+      
+  ]
+
+}
