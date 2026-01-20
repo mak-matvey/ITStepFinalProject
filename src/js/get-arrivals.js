@@ -1,11 +1,14 @@
 const arrivalButton = document.getElementById("main-page-arrival-button")
 const arrivalsDepartures = document.getElementById("arrivals-departures")
 
-arrivalButton.addEventListener("click", function () {
-    console.log("ok")
-})
+async function getArrivalsFromJSON () {
+    const ARRIVALS_URL = "http://127.0.0.1:3000/arrivals/"
+    const response = await fetch(ARRIVALS_URL)
+    const data = await response.json()
 
+    console.log(response)
+}
 
-// 1. Poluchit' dannie
-// 2. Render
-// 3. Prelodaer
+const table = document.querySelector('.arrivals-table')
+const template = document.querySelector('#template')
+const

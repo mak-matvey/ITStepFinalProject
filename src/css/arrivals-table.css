@@ -1,0 +1,27 @@
+.arrivals-table {
+    display: table;
+}
+
+.arrivals-table td,
+.arrivals-table th {
+    padding: 5px 15px 5px 15px;
+    text-align: left;
+    font-family: "Google Sans", sans-serif;
+    color: var(--main-black);
+}
+
+.arrivals-table,
+.arrivals-table th,
+.arrivals-table td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.arrivals-table th {
+    font-size: 19px;
+}
+
+.arrivals-table td {
+    font-size: 17px;
+    font-weight: 500;
+}
