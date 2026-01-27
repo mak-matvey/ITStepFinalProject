@@ -43,32 +43,33 @@
           <!-- Конец главной страницы -->
           <!-- Прилеты/вылеты (работает по кнопкам выше) -->
           <div class="arrivals-departures" id="arrivals-departures">
-            <template class="arrivals-template">
-              <table class="arrivals-table" id="arrivals-table">
-              <thead>
-                <tr>
-                  <th>Авиакомпания</th>
-                  <th>Рейс</th>
-                  <th>Откуда</th>
-                  <th>Время прибытия</th>
-                  <th>Статус</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Belavia</td>
-                  <td>BRU1047 | B21047</td>
-                  <td>Москва (Домодедово)</td>
-                  <td>17:30</td>
-                  <td>Прибыл</td>
-                </tr>
-              </tbody>
-            </table>
-          </template>
           </div>
         </div>
       </div>
     </main>
-    <script src="/src/js/get-arrivals.js"></script>
+    <!-- TEMPLATE -->
+    <template id="arrivals-template" class="arrivals-template">
+      <table class="arrivals-table" id="arrivals-table">
+      <thead>
+        <tr>
+          <th>Авиакомпания</th>
+          <th>Откуда</th>
+          <th>Время прибытия</th>
+          <th>Статус</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Belavia</td>
+          <td>BRU1047 | B21047</td>
+          <td>Москва (Домодедово)</td>
+          <td>17:30</td>
+          <td>Прибыл</td>
+        </tr>
+      </tbody>
+    </table>
+  </template>
+  <!-- TEMPLATE -->
+  <script type="module" src="/src/js/get-arrivals.js"></script>
   </body>
 </html>

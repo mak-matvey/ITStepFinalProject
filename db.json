@@ -1,15 +1,34 @@
 {
-  "arrivals": [
+  "arrivals":
+  [
     {
         "id": "1",
         "airline": "CA722",
         "destination": "Пекин (Шоуду)",
-        "checkin_counters": ["38", "42", "40", "41"],
-        "boarding_gate": "B7",
         "departure_time": "18:50",
-        "status": "Посадка окончена"
-      }
-      
+        "status": "Прилетел"
+    },
+    {
+      "id": "2",
+      "airline": "Belavia",
+      "destination": "Москва (Домодедово)",
+      "departure_time": "19:00",
+      "status": "В полете"
+    },
+    {
+      "id": "3",
+      "airline": "Belavia",
+      "destination": "Санкт-Петербург",
+      "boarding_gate": "B7",
+      "departure_time": "19:05",
+      "status": "В полете"
+    },
+    {
+      "id": "4",
+      "airline": "Aeroflot",
+      "departure_time": "19:15",
+      "status": "В полете"
+    }
   ]
 
 }
