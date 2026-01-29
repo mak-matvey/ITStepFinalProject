@@ -2,33 +2,43 @@
   "arrivals":
   [
     {
-        "id": "1",
-        "airline": "CA722",
-        "destination": "Пекин (Шоуду)",
-        "departure_time": "18:50",
-        "status": "Прилетел"
+      "id": "1",
+      "airline": "CA722",
+      "departure": "Пекин (Шоуду)",
+      "arrival_time": "18:50",
+      "status": "Прилетел"
     },
     {
       "id": "2",
       "airline": "Belavia",
-      "destination": "Москва (Домодедово)",
-      "departure_time": "19:00",
+      "departure": "Москва (Домодедово)",
+      "arrival_time": "19:00",
       "status": "В полете"
     },
     {
       "id": "3",
-      "airline": "Belavia",
-      "destination": "Санкт-Петербург",
-      "boarding_gate": "B7",
-      "departure_time": "19:05",
+      "airline": "Azimuth",
+      "departure": "Санкт-Петербург",
+      "arrival_time": "20:05",
       "status": "В полете"
     },
     {
       "id": "4",
       "airline": "Aeroflot",
-      "departure_time": "19:15",
+      "departure": "Москва (Шереметьево)",
+      "arrival_time": "20:15",
       "status": "В полете"
     }
-  ]
+  ],
 
+  "departures":
+    [
+      {
+        "id": "1",
+        "airline": "Rossiya",
+        "destination": "Москва (Внуково)",
+        "departure_time": "17:50",
+        "status": "Регистрация"
+      }
+    ]
 }

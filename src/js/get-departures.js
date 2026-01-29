@@ -1,17 +1,17 @@
 import { CONFIG } from './config.js';
 
-const arrivalsButton = document.getElementById("main-page-arrival-button");
+const departuresButton = document.getElementById("main-page-departure-button");
 const arrivalsDepartures = document.getElementById("arrivals-departures");
-const tableTemplate = document.getElementById("arrivals-template");
+const tableTemplate = document.getElementById("departures-template");
 
-function getArrivalsURL()
+function getDeparturesURL()
 {
-  return CONFIG.API.BASE_URL + CONFIG.API.ENDPOINTS.ARRIVALS;
+  return CONFIG.API.BASE_URL + CONFIG.API.ENDPOINTS.DEPARTURES;
 }
 
-async function fetchArrivalsData()
+async function fetchDeparturesData()
 {
-  const response = await fetch(getArrivalsURL());
+  const response = await fetch(getDeparturesURL());
 
   if (!response.ok) {
     throw new Error(`Ошибка: ${response.status}`)
@@ -20,29 +20,30 @@ async function fetchArrivalsData()
   return await response.json();
 }
 
-function createTableRow(flightData) {
-  const { airline, departure, arrival_time, status } = flightData;
-
-   return `
-    <tr>
-      <td>${airline}</td>
-      <td>${departure}</td>
-      <td>${arrival_time}</td>
-      <td>${status}</td>
-    </tr>
-  `;
+function createTableRow(flightData)
+{
+    const { airline, destination, departure_time, status } = flightData;
+    
+    return `
+      <tr>
+        <td>${airline}</td>
+        <td>${destination}</td>
+        <td>${departure_time}</td>
+        <td>${status}</td>
+      </tr>
+    `;
 }
 
-arrivalsButton.addEventListener("click", async () =>
+departuresButton.addEventListener("click", async () =>
 {
   try
   {
-    const data = await fetchArrivalsData();
+    const data = await fetchDeparturesData();
     const newItem = tableTemplate.content.cloneNode(true);
     const newTdBody = newItem.querySelector("tbody");
     
     const markup = data
-      .map((arrival) => createTableRow(arrival))
+      .map((departure) => createTableRow(departure))
       .join("");
     
     newTdBody.innerHTML = markup;
