@@ -14,7 +14,6 @@ This is a website about Belavia airline. I really hope you'll like it!
 ```bash
 npm ci
 npm i kill-port
-npm run start
 ```
 ### 3. Then write next line to start the project:
 ```bash
@@ -25,13 +24,13 @@ npm run start
 
 
 # 📁 Project Structure
-## src/
-## ├── css/
-## │   ├── style.css
-## │   ├── main-page.css
-## │   └── arrivals-table.css
-## ├── js/
-## │   ├── get-arrivals.js
-## │   ├── get-departures.js
-## │   └── config.js
-## └── index.html
+### src/
+### ├── css/
+### │   ├── style.css
+### │   ├── main-page.css
+### │   └── arrivals-table.css
+### ├── js/
+### │   ├── get-arrivals.js
+### │   ├── get-departures.js
+### │   └── config.js
+### └── index.html
