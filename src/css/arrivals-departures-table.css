@@ -1,47 +1,50 @@
 .arrivals-table,
 .departures-table {
-    display: table;
-    border-collapse: collapse;
-    width: 100%;
-    border-radius: 15px;
-    overflow: hidden;
-    background-color: white;
+	display: table;
+	border-collapse: collapse;
+	width: 100%;
+	border-radius: 15px;
+	overflow: hidden;
+	background-color: white;
 }
 
-/* ВЕРТИКАЛЬНЫЕ ЛИНИИ между колонками */
 .arrivals-table td,
 .arrivals-table th,
 .departures-table td,
 .departures-table th {
-    padding: 5px 15px 5px 15px;
-    text-align: left;
-    font-family: "Google Sans", sans-serif;
-    color: var(--main-black);
-    border-right: 1px solid #e0e0e0; /* Вертикальная линия справа от каждой ячейки */
+	padding: 5px 15px 5px 15px;
+	text-align: left;
+	font-family: 'Google Sans', sans-serif;
+	color: var(--main-black);
+	border-right: 1px solid #e0e0e0;
 }
 
-/* Убираем вертикальную линию у последней колонки */
 .arrivals-table td:last-child,
 .arrivals-table th:last-child,
 .departures-table td:last-child,
 .departures-table th:last-child {
-    border-right: none;
+	border-right: none;
 }
 
 .arrivals-table th,
 .departures-table th {
-    font-size: 19px;
-    background-color: #f8f9fa;
-    border-bottom: 2px solid #d0d0d0; /* Горизонтальная линия под заголовком */
+	font-size: 19px;
+	background-color: #f8f9fa;
+	border-bottom: 2px solid #d0d0d0;
 }
 
 .arrivals-table td,
 .departures-table td {
-    font-size: 17px;
-    font-weight: 500;
+	font-size: 17px;
+	font-weight: 500;
 }
 
 .arrivals-table tbody tr:nth-child(even),
 .departures-table tbody tr:nth-child(even) {
-    background-color: #f8f9fa;
+	background-color: #f8f9fa;
+}
+
+.airlineLogo {
+	width: 140px;
+	height: 35px;
 }

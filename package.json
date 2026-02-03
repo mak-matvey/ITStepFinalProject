@@ -1,20 +1,20 @@
 {
-  "name": "parcel-vanilla-starter",
-  "private": true,
-  "version": "0.0.0",
-  "source": "src/index.html",
-  "scripts": {
-    "start": "concurrently \"npm run parcel\" \"npm run server\"",
-    "parcel" : "parcel src/index.html",
-    "build": "parcel build",
-    "server": "npx json-server db.json"
-  },
-  "dependencies": {
-    "concurrently": "^9.2.1",
-    "json-server": "^1.0.0-beta.3"
-  },
-  "devDependencies": {
-    "parcel": "^2.14.0"
-  }
+	"name": "parcel-vanilla-starter",
+	"private": true,
+	"version": "0.0.0",
+	"source": "src/index.html",
+	"scripts": {
+		"start": "concurrently \"npm run parcel\" \"npm run server\" \"npx kill-port 3000\"",
+		"parcel": "parcel src/index.html",
+		"build": "parcel build",
+		"server": "npx json-server db.json"
+	},
+	"dependencies": {
+		"concurrently": "^9.2.1",
+		"json-server": "^1.0.0-beta.3",
+		"kill-port": "^2.0.1"
+	},
+	"devDependencies": {
+		"parcel": "^2.14.0"
+	}
 }
-
