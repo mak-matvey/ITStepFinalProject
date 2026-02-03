@@ -23,7 +23,7 @@ npm run start
 ### 5. Well done! The website is now running!
 
 
-# 📁 Project Structure
+<!--# 📁 Project Structure
 ├── 📁 src/
 │   ├── 📄 index.html
 │   │
@@ -40,3 +40,4 @@ npm run start
 │   └── 📁 img/
 │
 └── 📄 db.json
+-->
