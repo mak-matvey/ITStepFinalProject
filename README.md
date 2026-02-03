@@ -24,13 +24,19 @@ npm run start
 
 
 # 📁 Project Structure
-### src/
-### ├── css/
-### │   ├── style.css
-### │   ├── main-page.css
-### │   └── arrivals-table.css
-### ├── js/
-### │   ├── get-arrivals.js
-### │   ├── get-departures.js
-### │   └── config.js
-### └── index.html
+├── 📁 src/                       # Source files
+│   ├── 📄 index.html             # Main HTML document
+│   │
+│   ├── 📁 css/                   # Stylesheets
+│   │   ├── 📄 style.css          # Global styles
+│   │   ├── 📄 main-page.css      # Main page specific
+│   │   └── 📄 arrivals-table.css # Table designs
+│   │
+│   ├── 📁 js/                    # JavaScript modules
+│   │   ├── 📄 get-arrivals.js    # Arrivals data handling
+│   │   ├── 📄 get-departures.js  # Departures data handling
+│   │   └── 📄 config.js          # Configuration
+│   │
+│   └── 📁 img/                   # Images
+│
+└── 📄 db.json                    # Departures and arrivals data
