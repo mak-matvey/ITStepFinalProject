@@ -1,3 +1,16 @@
-header.header {
-	background-color: #49559F;
+.nav {
+	display: flex;
+	align-items: center;
+	gap: 60px;
+	padding-top: 15px;
+}
+
+.nav * {
+	text-decoration: none;
+	list-style: none;
+}
+
+.nav-heading {
+	padding-top: 10px;
+	font-size: 35px;
 }
