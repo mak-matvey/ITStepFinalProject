@@ -1,0 +1,11 @@
+.about-us-heading {
+	color: snow;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+header {
+	padding: 20px 0 20px 0;
+	background-color: var(--sky);
+}

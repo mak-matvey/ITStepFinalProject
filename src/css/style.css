@@ -21,9 +21,10 @@
 }
 
 body {
-	font-family: "Jost", sans-serif;
+	font-family: 'Jost', sans-serif;
 }
 
 :root {
 	--main-black: #333333;
+	--sky: #00bfff;
 }

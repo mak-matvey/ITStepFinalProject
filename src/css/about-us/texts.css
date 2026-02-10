@@ -1,0 +1,11 @@
+@font-face {
+	font-family: 'Izvestija';
+	src: url('/src/fonts/ofont.ru_Izvestija.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.about-us-history-subheading {
+	font-family: 'Izvestija';
+	font-size: 25px;
+}
