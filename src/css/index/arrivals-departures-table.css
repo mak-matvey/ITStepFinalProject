@@ -6,6 +6,7 @@
 	border-radius: 15px;
 	overflow: hidden;
 	background-color: white;
+	font-weight: 600;
 }
 
 .arrivals-table td,
@@ -13,10 +14,10 @@
 .departures-table td,
 .departures-table th {
 	padding: 5px 15px 5px 15px;
-	text-align: left;
-	font-family: 'Google Sans', sans-serif;
+	text-align: center;
 	color: var(--main-black);
 	border-right: 1px solid #e0e0e0;
+	font-weight: 600;
 }
 
 .arrivals-table td:last-child,
@@ -47,4 +48,6 @@
 .airlineLogo {
 	width: 140px;
 	height: 35px;
+	display: block;
+	margin: 5px auto;
 }

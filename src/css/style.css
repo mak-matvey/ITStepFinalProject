@@ -17,14 +17,34 @@
 	padding: 0 15px;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	gap: 50px;
 }
 
 body {
-	font-family: 'Jost', sans-serif;
+	font-family: 'SN pro', sans-serif;
+	font-weight: 400;
 }
 
 :root {
 	--main-black: #333333;
 	--sky: #00bfff;
+}
+
+button {
+	font-family: 'SN Pro', sans-serif;
+	font-weight: 400;
+	border-radius: 15px;
+}
+
+button:hover {
+	cursor: pointer;
+	background-image: none;
+	background-color: blue;
+	transition: 0.4s;
+}
+
+li {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
 }

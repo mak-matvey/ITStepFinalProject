@@ -1,11 +1,25 @@
-.about-us-heading {
-	color: snow;
+.nav {
 	display: flex;
-	align-items: center;
 	justify-content: center;
+	align-items: center;
+	gap: 60px;
+}
+
+.nav * {
+	text-decoration: none;
+	list-style: none;
+}
+
+.nav-heading {
+	padding-top: 10px;
+	font-size: 35px;
+}
+.nav-list-li:hover {
+	cursor: pointer;
 }
 
 header {
 	padding: 20px 0 20px 0;
-	background-color: var(--sky);
+	display: flex;
+	justify-content: center;
 }
