@@ -4,25 +4,58 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="/src/css/style.css" />
+		<link rel="stylesheet" href="/src/css/index/nav.css" />
+		<link rel="stylesheet" href="/src/css/fleet/main.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+			rel="stylesheet"
+		/>
 		<title>Belavia's fleet</title>
 	</head>
 	<body>
-		<header>
-			<nav class="fleet-nav">
-				<li>
-					<a href="">
-						<h2>Текущий флот</h2>
-					</a>
-				</li>
-				<li>
-					<a href="">
-						<h2>Исторический флот</h2>
-					</a>
-				</li>
-			</nav>
-		</header>
+		<div class="container">
+			<header>
+				<nav class="nav" id="nav">
+					<ul class="nav">
+						<li class="nav-list-li">
+							<img
+								src="https://airport.by/upload/images/4e3bdc6556844bde1c84c53fc65a8cc6.png"
+								alt="Авиакомпания 'Belavia'"
+								width="350"
+							/>
+						</li>
+						<li class="nav-list-li">
+							<a href="/src/index.html" rel="noopener noreferrer">
+								<h2 class="nav-heading">Главная</h2>
+							</a>
+						</li>
+						<li class="nav-list-li">
+							<a href="/src/html/about-us.html">
+								<h2 class="nav-heading">О нас</h2>
+							</a>
+						</li>
+						<li class="nav-list-li">
+							<a href="/src/html/fleet.html">
+								<h2 class="nav-heading">Флот</h2>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<main>
+				<ul class="fleet-ul">
+					<li>
+						<button id="fleet-button" class="fleet-button">Текущий флот</button>
+					</li>
+				</ul>
+				<div class="text-box"></div>
+			</main>
+		</div>
+		<script type="module">
+			import '/src/js/fleet/show-fleet.js'
+		</script>
 	</body>
 </html>

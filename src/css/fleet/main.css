@@ -1,0 +1,14 @@
+.fleet-ul li {
+	list-style: none;
+	text-decoration: none;
+}
+
+.fleet-ul {
+    display: flex;
+    justify-content: center;
+}
+
+.fleet-button {
+    padding: 7px 25px;
+    font-size: 20px;
+}
