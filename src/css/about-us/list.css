@@ -15,12 +15,9 @@
 }
 
 .about-us-button {
-    border-radius: 35px;
-    padding: 25px 30px;
     border: none;
     background-image: linear-gradient(60deg, var(--sky), #b3dcfd);
-    font-family: 'Jost', sans-serif;
-    font-size: 32px;
+    font-size: 25px;
     font-weight: 500;
     color: snow;
 }

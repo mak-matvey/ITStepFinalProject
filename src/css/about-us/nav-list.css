@@ -14,12 +14,3 @@
     gap: 75px;
     padding-left: 60px;
 }
-
-.about-us-button {
-    padding: 15px 45px;
-    border: none;
-    background-image: linear-gradient(45deg, #29dabd, #26a8e4);
-    font-size: 30px;
-    font-weight: 500;
-    color: snow;
-}
