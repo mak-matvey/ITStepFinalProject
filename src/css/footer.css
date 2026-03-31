@@ -1,9 +1,13 @@
 footer {
-    background-color: #00008B;
+    background-color: #0089ff;
     border-radius: 15px;
     margin-bottom: 10px;
     padding: 10px 15px;
     font-family: 'Montserrat';
+}
+
+a {
+    text-decoration: none;
 }
 
 .footer-main-box {
@@ -12,11 +16,37 @@ footer {
 }
 
 .footer-logo {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
 }
 
 .footer-heading,
 .footer-subheading {
     color: white;
+}
+
+.footer-heading {
+    font-size: 26px;
+}
+
+.footer-subheading {
+    font-size: 20px;
+}
+
+.company-box,
+.navigation-box,
+.contact-us-box {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.footer-mini-logo {
+    width: 40px;
+    height: 40px;
+}
+
+.contact-us-bottom {
+    display: flex;
+    gap: 15px;
 }

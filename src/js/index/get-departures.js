@@ -70,10 +70,12 @@ function createTableRow(flightData) {
   `
 	}
 
+	const statusColor = getStatusColor(status)
+
 	resultTableRow += `<td>${destination}</td>
-      <td>${departure_time}</td>
-      <td>${status}</td>
-    </tr>`
+       <td>${departure_time}</td>
+       <td style="color: ${statusColor}; font-weight: bold;">${status}</td>
+     </tr>`
 
 	return resultTableRow
 }
@@ -95,3 +97,19 @@ departuresButton.addEventListener('click', async () => {
 		arrivalsDepartures.innerHTML = `Не удалось загрузить данные: ${error.message}`
 	}
 })
+
+document.addEventListener('DOMContentLoaded', () => {
+    arrivalsButton.click()
+})
+
+function getStatusColor(status) {
+    const colors = {
+        'Вылетел': '#4caf50',
+        'Регистрация': '#ff9800',
+        'Посадка': '#4caf50',
+        'Ожидается': '#9e9e9e',
+        'Задерживается': '#f44336',
+        'Отменен': '#757575'
+    }
+    return colors[status] || '#9e9e9e'
+}

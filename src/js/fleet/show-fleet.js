@@ -1,15 +1,82 @@
 const fleetButton = document.getElementById('fleet-button')
 const textBox = document.getElementById('text-box')
 
-fleetButton.addEventListener('click', function showFleet() {
-	textBox.innerHTML = ''
-	textBox.innerHTML = `<img url="https://belavia.com.ru/wp-content/uploads/2023/06/plain1.jpg" />
-    <p class="fleet-subheading">Данные самолёты производятся и собираются на одноимённом бразильском предприятии. «Белавиа» располагает сразу четырьмя судами данной модели, а их среднее возрастное значение составляет 4 года. Такой транспорт оснащается мощными двигателями CF34-8Е5 от мирового лидера General Electric, благодаря чему самолёты применяются для средне- и дальнемагистральных авиарейсов.</br>
-    Ключевые технические показатели Embraer Е-175:</br></br>
+function getFleetURL() {
+    return 'http://127.0.0.1:3000/fleet'
+}
 
-    Наибольшая пассажировместимость: 64 места эконом, 12 мест бизнес-части</br>
-    Максимум взлётной массы: 38.79 тонн</br>
-    Предел дальности рейсов: 3335 км</br>
-    Максимум крейсерской скорости: 890 км/ч</br>
-    Наибольшая высота полёта: 12.5 км (41.000 фт)</p>`
+async function fetchFleetData() {
+    const response = await fetch(getFleetURL())
+
+    if (!response.ok) {
+        throw new Error(`Ошибка загрузки: ${response.status}`)
+    }
+
+    return await response.json()
+}
+
+function createFleetCard(aircraft) {
+    const imageHtml = aircraft.image 
+        ? `<img src="${aircraft.image}" alt="${aircraft.type}" onerror="this.parentElement.innerHTML='<div class=\'no-image\'>✈️</div>'">`
+        : `<div class="no-image">✈️</div>`
+    
+    return `
+        <div class="fleet-card">
+            <div class="fleet-card-image">
+                ${imageHtml}
+            </div>
+            <div class="fleet-card-content">
+                <h3 class="fleet-card-title">${aircraft.type}</h3>
+                <ul class="fleet-card-specs">
+                    <li><strong>Вместимость</strong> <span>${aircraft.capacity}</span></li>
+                    <li><strong>Дальность полета</strong> <span>${aircraft.range}</span></li>
+                    <li><strong>Двигатели</strong> <span>${aircraft.engines}</span></li>
+                    <li><strong>Год выпуска</strong> <span>${aircraft.year}</span></li>
+                    <li><strong>Количество в парке</strong> <span>${aircraft.quantity}</span></li>
+                </ul>
+                <p class="fleet-card-description">${aircraft.description}</p>
+            </div>
+        </div>
+    `
+}
+
+function showLoading() {
+    textBox.innerHTML = `
+        <div class="fleet-loading">
+            <div class="spinner"></div>
+            <p>Загрузка данных о флоте...</p>
+        </div>
+    `
+}
+
+async function displayFleet() {
+    showLoading()
+    
+    try {
+        const data = await fetchFleetData()
+        
+        if (!data || data.length === 0) {
+            textBox.innerHTML = '<p class="error-container">Нет данных о флоте</p>'
+            return
+        }
+        
+        const fleetHTML = `
+            <div class="fleet-grid">
+                ${data.map(aircraft => createFleetCard(aircraft)).join('')}
+            </div>
+        `
+        
+        textBox.innerHTML = fleetHTML
+    } catch (error) {
+        console.error('Ошибка загрузки флота:', error)
+        showError(`Не удалось загрузить данные о флоте: ${error.message}`)
+    }
+}
+
+if (fleetButton) {
+    fleetButton.addEventListener('click', displayFleet)
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    displayFleet()
 })

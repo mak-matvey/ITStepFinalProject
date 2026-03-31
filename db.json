@@ -1,44 +1,221 @@
 {
-  "arrivals":
-  [
+  "arrivals": [
     {
       "id": "1",
-      "airline": "CA722",
-      "departure": "Пекин (Шоуду)",
-      "arrival_time": "18:50",
+      "airline": "Belavia",
+      "departure": "Москва (Домодедово)",
+      "arrival_time": "09:30",
       "status": "Прилетел"
     },
     {
       "id": "2",
-      "airline": "Belavia",
-      "departure": "Москва (Домодедово)",
-      "arrival_time": "19:00",
-      "status": "В полете"
+      "airline": "Aeroflot",
+      "departure": "Москва (Шереметьево)",
+      "arrival_time": "10:15",
+      "status": "Прилетел"
     },
     {
       "id": "3",
-      "airline": "Azimuth",
-      "departure": "Санкт-Петербург",
-      "arrival_time": "20:05",
-      "status": "В полете"
+      "airline": "Flydubai",
+      "departure": "Дубай",
+      "arrival_time": "11:45",
+      "status": "Прибывает"
     },
     {
       "id": "4",
+      "airline": "Belavia",
+      "departure": "Санкт-Петербург",
+      "arrival_time": "12:20",
+      "status": "Задерживается"
+    },
+    {
+      "id": "5",
+      "airline": "Uzbekistan Airways",
+      "departure": "Ташкент",
+      "arrival_time": "13:50",
+      "status": "В полете"
+    },
+    {
+      "id": "6",
+      "airline": "SCAT",
+      "departure": "Астана",
+      "arrival_time": "14:30",
+      "status": "В полете"
+    },
+    {
+      "id": "7",
+      "airline": "Red Wings",
+      "departure": "Екатеринбург",
+      "arrival_time": "15:45",
+      "status": "Отменен"
+    },
+    {
+      "id": "8",
+      "airline": "Belavia",
+      "departure": "Калининград",
+      "arrival_time": "16:20",
+      "status": "Ожидается"
+    },
+    {
+      "id": "9",
+      "airline": "Azimuth",
+      "departure": "Сочи",
+      "arrival_time": "17:55",
+      "status": "Ожидается"
+    },
+    {
+      "id": "10",
+      "airline": "CA722",
+      "departure": "Пекин (Шоуду)",
+      "arrival_time": "18:50",
+      "status": "В полете"
+    },
+    {
+      "id": "11",
+      "airline": "Belavia",
+      "departure": "Казань",
+      "arrival_time": "19:30",
+      "status": "Ожидается"
+    },
+    {
+      "id": "12",
       "airline": "Aeroflot",
-      "departure": "Москва (Шереметьево)",
+      "departure": "Сочи",
       "arrival_time": "20:15",
       "status": "В полете"
     }
   ],
+  "departures": [
+    {
+      "id": "1",
+      "airline": "Belavia",
+      "destination": "Москва (Домодедово)",
+      "departure_time": "10:00",
+      "status": "Вылетел"
+    },
+    {
+      "id": "2",
+      "airline": "Aeroflot",
+      "destination": "Москва (Шереметьево)",
+      "departure_time": "10:45",
+      "status": "Регистрация"
+    },
+    {
+      "id": "3",
+      "airline": "Belavia",
+      "destination": "Санкт-Петербург",
+      "departure_time": "11:30",
+      "status": "Посадка"
+    },
+    {
+      "id": "4",
+      "airline": "Flydubai",
+      "destination": "Дубай",
+      "departure_time": "12:15",
+      "status": "Регистрация"
+    },
+    {
+      "id": "5",
+      "airline": "Uzbekistan Airways",
+      "destination": "Ташкент",
+      "departure_time": "13:40",
+      "status": "Ожидается"
+    },
+    {
+      "id": "6",
+      "airline": "SCAT",
+      "destination": "Астана",
+      "departure_time": "14:55",
+      "status": "Ожидается"
+    },
+    {
+      "id": "7",
+      "airline": "Red Wings",
+      "destination": "Екатеринбург",
+      "departure_time": "15:20",
+      "status": "Задерживается"
+    },
+    {
+      "id": "8",
+      "airline": "Azimuth",
+      "destination": "Сочи",
+      "departure_time": "16:45",
+      "status": "Ожидается"
+    },
+    {
+      "id": "9",
+      "airline": "Belavia",
+      "destination": "Калининград",
+      "departure_time": "17:30",
+      "status": "Ожидается"
+    },
+    {
+      "id": "10",
+      "airline": "CA722",
+      "destination": "Пекин (Шоуду)",
+      "departure_time": "20:15",
+      "status": "Ожидается"
+    },
+    {
+      "id": "11",
+      "airline": "Belavia",
+      "destination": "Казань",
+      "departure_time": "21:00",
+      "status": "Ожидается"
+    },
+    {
+      "id": "12",
+      "airline": "Aeroflot",
+      "destination": "Санкт-Петербург",
+      "departure_time": "22:30",
+      "status": "Ожидается"
+    }
+  ],
 
-  "departures":
-    [
-      {
-        "id": "1",
-        "airline": "Red Wings",
-        "destination": "Москва (Внуково)",
-        "departure_time": "17:50",
-        "status": "Регистрация"
-      }
-    ]
+  "fleet": [
+    {
+      "id": "1",
+      "type": "Boeing 737-800",
+      "capacity": "162 пассажира",
+      "range": "5 400 км",
+      "engines": "CFM56-7B",
+      "year": "2015",
+      "quantity": "6",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Boeing_737-800_of_Belavia.jpg/960px-Boeing_737-800_of_Belavia.jpg",
+      "description": "Основной самолет средней дальности для полетов по Европе и Ближнему Востоку."
+    },
+    {
+      "id": "2",
+      "type": "Embraer E-195",
+      "capacity": "118 пассажиров",
+      "range": "3 500 км",
+      "engines": "GE CF34-8E",
+      "year": "2018",
+      "quantity": "4",
+      "image": "https://cdn.pixabay.com/photo/2016/11/23/17/05/airplane-1853984_1280.jpg",
+      "description": "Региональный самолет нового поколения."
+    },
+    {
+      "id": "3",
+      "type": "Embraer E-175",
+      "capacity": "76 пассажиров",
+      "range": "3 300 км",
+      "engines": "GE CF34-8E",
+      "year": "2019",
+      "quantity": "2",
+      "image": "https://cdn.pixabay.com/photo/2015/01/29/08/09/airplane-615764_1280.jpg",
+      "description": "Экономичный региональный самолет."
+    },
+    {
+      "id": "4",
+      "type": "Airbus A330-200",
+      "capacity": "278 пассажиров",
+      "range": "13 400 км",
+      "engines": "Rolls-Royce Trent 700",
+      "year": "2025",
+      "quantity": "1",
+      "image": "https://cdn.pixabay.com/photo/2016/09/05/17/54/airbus-a330-1647228_1280.jpg",
+      "description": "Дальнемагистральный широкофюзеляжный самолет."
+    }
+  ]
 }
