@@ -8,6 +8,17 @@ footer {
 
 a {
     text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+a:active {
+    transform: translateY(0px);
+    transition: transform 0.05s ease;
+}
+
+a:hover {
+    transition: 0.5s ease;
+	transform: translateY(-4px);
 }
 
 .footer-main-box {
@@ -35,7 +46,9 @@ a {
 
 .company-box,
 .navigation-box,
-.contact-us-box {
+.contact-us-box,
+.company-bottom,
+.navigation-bottom {
     display: flex;
     flex-direction: column;
     gap: 7px;
@@ -49,4 +62,10 @@ a {
 .contact-us-bottom {
     display: flex;
     gap: 15px;
+}
+
+.company-bottom,
+.navigation-bottom {
+    display: flex;
+    gap: 5px;
 }
