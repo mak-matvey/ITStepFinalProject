@@ -179,42 +179,53 @@
       "capacity": "162 пассажира",
       "range": "5 400 км",
       "engines": "CFM56-7B",
-      "year": "2015",
+      "year": "2005 - 2015",
       "quantity": "6",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Boeing_737-800_of_Belavia.jpg/960px-Boeing_737-800_of_Belavia.jpg",
       "description": "Основной самолет средней дальности для полетов по Европе и Ближнему Востоку."
     },
     {
       "id": "2",
+      "type": "Boeing 737-300",
+      "capacity": "148 пассажиров",
+      "range": "3 815 км",
+      "engines": "CFM56-3B-1",
+      "year": "2003 - 2016",
+      "quantity": "6",
+      "image": "https://cdn.jetphotos.com/full/6/83694_1507302905.jpg",
+      "description": "Основной самолет короткой и средней дальности для полетов Ближнему Востоку."
+    },
+    {
+      "id": "3",
       "type": "Embraer E-195",
       "capacity": "118 пассажиров",
       "range": "3 500 км",
       "engines": "GE CF34-8E",
-      "year": "2018",
+      "year": "2016 - 2018",
       "quantity": "4",
-      "image": "https://cdn.pixabay.com/photo/2016/11/23/17/05/airplane-1853984_1280.jpg",
+      "image": "https://cdn-new.tochka.by/upload-1/iblock/f4c/f4ca0a07b4a09459fa14313ab0b1a972/bc356d0402e03326014fc6ee24c4f5b5.jpg",
       "description": "Региональный самолет нового поколения."
     },
     {
-      "id": "3",
+      "id": "4",
       "type": "Embraer E-175",
       "capacity": "76 пассажиров",
       "range": "3 300 км",
       "engines": "GE CF34-8E",
       "year": "2019",
       "quantity": "2",
-      "image": "https://cdn.pixabay.com/photo/2015/01/29/08/09/airplane-615764_1280.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/4f/EW_512PO_Embraer_ERJ_175LR_%28170-200LR%29_E75S_c_n_170-721_-_BRU_%2831257499068%29.jpg",
       "description": "Экономичный региональный самолет."
     },
     {
-      "id": "4",
+      "id": "5",
       "type": "Airbus A330-200",
       "capacity": "278 пассажиров",
       "range": "13 400 км",
       "engines": "Rolls-Royce Trent 700",
       "year": "2025",
       "quantity": "1",
-      "image": "https://cdn.pixabay.com/photo/2016/09/05/17/54/airbus-a330-1647228_1280.jpg",
+      "image": "https://ot-vinta.org/wp-content/uploads/2025/06/photo_2025-06-06_15-17-04.jpg",
       "description": "Дальнемагистральный широкофюзеляжный самолет."
     }
   ]
