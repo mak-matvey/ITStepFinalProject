@@ -1,5 +1,5 @@
 const fleetButton = document.getElementById('fleet-button')
-const textBox = document.getElementById('text-box')
+const fleetPlaceholder = document.getElementById('fleet-placeholder')
 
 function getFleetURL() {
     return 'http://127.0.0.1:3000/fleet'
@@ -41,7 +41,7 @@ function createFleetCard(aircraft) {
 }
 
 function showLoading() {
-    textBox.innerHTML = `
+    fleetPlaceholder.innerHTML = `
         <div class="fleet-loading">
             <div class="spinner"></div>
             <p>Загрузка данных о флоте...</p>
@@ -56,7 +56,7 @@ async function displayFleet() {
         const data = await fetchFleetData()
         
         if (!data || data.length === 0) {
-            textBox.innerHTML = '<p class="error-container">Нет данных о флоте</p>'
+            fleetPlaceholder.innerHTML = '<p class="error-container">Нет данных о флоте</p>'
             return
         }
         
@@ -66,7 +66,7 @@ async function displayFleet() {
             </div>
         `
         
-        textBox.innerHTML = fleetHTML
+        fleetPlaceholder.innerHTML = fleetHTML
     } catch (error) {
         console.error('Ошибка загрузки флота:', error)
         showError(`Не удалось загрузить данные о флоте: ${error.message}`)

@@ -173,16 +173,6 @@
     margin-bottom: 1rem;
 }
 
-.retry-button {
-    background: #003366;
-    color: white;
-    border: none;
-    padding: 0.5rem 1.5rem;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
 .retry-button:hover {
     background: #002244;
 }
