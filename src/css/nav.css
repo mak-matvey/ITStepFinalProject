@@ -1,0 +1,27 @@
+.nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 60px;
+}
+
+.nav * {
+	text-decoration: none;
+	list-style: none;
+	color: #365ccb;
+}
+
+.nav-heading {
+	padding-top: 10px;
+	font-size: 35px;
+}
+.nav-list-li:hover {
+	cursor: pointer;
+}
+
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 0;
+}

@@ -1,4 +1,3 @@
- /* Контейнер для карточек - используем Flexbox */
 .fleet-grid {
     display: flex;
     flex-wrap: wrap;
