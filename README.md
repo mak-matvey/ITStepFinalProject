@@ -25,43 +25,43 @@ npm run start
 ### 6. Well done! The website is now running!
 
 
-📁 Project Structure
-├── 📁 src/
-│   ├── 📄 index.html
-│   │
-│   ├── 📁 html/
-│   │   ├── 📄 about-us.html
-│   │   ├── 📄 fleet.html
-│   │   └── 📄 service.html
-│   │
-│   ├── 📁 css/
-│   │   ├── 📁 index/
-│   │       ├── 📄 arrivals-departures-table.css
-│   │       └── 📄 main-page.css
-│   │   ├── 📁 about-us/
-│   │       └── 📄 cards.css
-│   │   ├── 📁 fleet/
-│   │       ├── 📄 cards.css
-│   │       └── 📄 main.css
-│   │   ├── 📁 service/
-│   │       └── 📄 cards.css
-│   │   ├── 📄 style.css
-│   │   ├── 📄 footer.css
-│   │   └── 📄 nav.css
-│   │
-│   ├── 📁 js/
-│   │   ├── 📁 index/
-│   │       ├── 📄 get-arrivals.js
-│   │       ├── 📄 get-departures.js
-│   │       └── 📄 config.js
-│   │   ├── 📁 fleet/
-│   │       └── 📄 show-fleet.js
-│   │   ├── 📁 service/
-│   │       └── 📄 show-service.js
-│   │   └── 📁 for-all/
-│   │       └── 📄 connect.js
-│   │
-│   └── 📁 img/
-│
-├── 📄 README.md
-└── 📄 db.json
+## 📁 Project Structure
+### ├── 📁 src/
+### │   ├── 📄 index.html
+### │   │
+### │   ├── 📁 html/
+### │   │   ├── 📄 about-us.html
+### │   │   ├── 📄 fleet.html
+### │   │   └── 📄 service.html
+### │   │
+### │   ├── 📁 css/
+### │   │   ├── 📁 index/
+### │   │       ├── 📄 arrivals-departures-table.css
+### │   │       └── 📄 main-page.css
+### │   │   ├── 📁 about-us/
+### │   │       └── 📄 cards.css
+### │   │   ├── 📁 fleet/
+### │   │       ├── 📄 cards.css
+### │   │       └── 📄 main.css
+### │   │   ├── 📁 service/
+### │   │       └── 📄 cards.css
+### │   │   ├── 📄 style.css
+### │   │   ├── 📄 footer.css
+### │   │   └── 📄 nav.css
+### │   │
+### │   ├── 📁 js/
+### │   │   ├── 📁 index/
+### │   │       ├── 📄 get-arrivals.js
+### │   │       ├── 📄 get-departures.js
+### │   │       └── 📄 config.js
+### │   │   ├── 📁 fleet/
+### │   │       └── 📄 show-fleet.js
+### │   │   ├── 📁 service/
+### │   │       └── 📄 show-service.js
+### │   │   └── 📁 for-all/
+### │   │       └── 📄 connect.js
+### │   │
+### │   └── 📁 img/
+### │
+### ├── 📄 README.md
+### └── 📄 db.json
