@@ -1,68 +1,194 @@
 # Belavia Airlines ✈️
 
-**Final project of second year education in ITStep**
+> Официальный веб-сайт авиакомпании Belavia — учебный проект второго курса ITStep Academy
 
-This is a website about Belavia airline. I really hope you'll like it!
+Современный одностраничный сайт национальной авиакомпании Беларуси с интерактивным расписанием рейсов, информацией о парке воздушных судов и услугах компании.
 
----
-
-## How to Start It?
-
-### 1. Make sure you've installed <a href="https://nodejs.org/en/download">Node.js</a>
-
-### 2. Clone this repository and open it in VSCode
-
-### 3. Open new terminal and write next commands:
-```bash
-npm ci
-npm i kill-port
-```
-### 4. Then write next line to start the project:
-```bash
-npm run start
-```
-### 5. Find line "Server running at..." and CTRL + click on the link
-### 6. Well done! The website is now running!
+![Status](https://img.shields.io/badge/status-completed-success)
+![License](https://img.shields.io/badge/license-MIT-blue)
 
 ---
 
-## 📁 Project Structure
-#### ├── 📁 src/
-#### │   ├── 📄 index.html
-#### │   │
-#### │   ├── 📁 html/
-#### │   │   ├── 📄 about-us.html
-#### │   │   ├── 📄 fleet.html
-#### │   │   └── 📄 service.html
-#### │   │
-#### │   ├── 📁 css/
-#### │   │   ├── 📁 index/
-#### │   │       ├── 📄 arrivals-departures-table.css
-#### │   │       └── 📄 main-page.css
-#### │   │   ├── 📁 about-us/
-#### │   │       └── 📄 cards.css
-#### │   │   ├── 📁 fleet/
-#### │   │       ├── 📄 cards.css
-#### │   │       └── 📄 main.css
-#### │   │   ├── 📁 service/
-#### │   │       └── 📄 cards.css
-#### │   │   ├── 📄 style.css
-#### │   │   ├── 📄 footer.css
-#### │   │   └── 📄 nav.css
-#### │   │
-#### │   ├── 📁 js/
-#### │   │   ├── 📁 index/
-#### │   │       ├── 📄 get-arrivals.js
-#### │   │       ├── 📄 get-departures.js
-#### │   │       └── 📄 config.js
-#### │   │   ├── 📁 fleet/
-#### │   │       └── 📄 show-fleet.js
-#### │   │   ├── 📁 service/
-#### │   │       └── 📄 show-service.js
-#### │   │   └── 📁 for-all/
-#### │   │       └── 📄 connect.js
-#### │   │
-#### │   └── 📁 img/
-#### │
-#### ├── 📄 README.md
-#### └── 📄 db.json
+## 🚀 Особенности проекта
+
+- **Динамическое расписание** — отображение рейсов прибытия и отправления в реальном времени
+- **Адаптивный дизайн** — корректное отображение на всех устройствах
+- **Модульная архитектура** — чистая структура кода с разделением ответственности
+- **REST API** — использование JSON Server для эмуляции бэкенда
+- **ES6+ модули** — современный JavaScript с импортами/экспортами
+- **Оптимизированная сборка** — бандлинг через Parcel с минификацией
+
+---
+
+## 🛠 Технологический стек
+
+| Категория | Технологии |
+|-----------|------------|
+| **Frontend** | HTML5, CSS3, Vanilla JavaScript (ES6+) |
+| **Бандлер** | Parcel 2.x |
+| **API** | JSON Server (REST API эмуляция) |
+| **Утилиты** | concurrently, kill-port |
+| **Сборка** | npm scripts |
+
+---
+
+## 📦 Установка и запуск
+
+### Предварительные требования
+
+- [Node.js](https://nodejs.org/) версии 18.x или выше
+- npm (идёт в комплекте с Node.js)
+
+### Шаги установки
+
+1. **Клонируйте репозиторий:**
+   ```bash
+   git clone <repository-url>
+   cd <project-folder>
+   ```
+
+2. **Установите зависимости:**
+   ```bash
+   npm ci
+   ```
+
+3. **Запустите проект:**
+   ```bash
+   npm run start
+   ```
+
+   Эта команда одновременно запускает:
+   - Dev-сервер Parcel (горячая перезагрузка)
+   - JSON Server (локальный API на порту 3000)
+   - Очистку порта 3000 (на случай зависших процессов)
+
+4. **Откройте браузер:**
+   
+   Перейдите по адресу, указанному в терминале (обычно `http://127.0.0.1:1234`)
+
+---
+
+## 📁 Структура проекта
+
+```
+├── src/
+│   ├── index.html              # Главная страница
+│   ├── html/                   # Дополнительные HTML-страницы
+│   │   ├── about-us.html       # О компании
+│   │   ├── fleet.html          # Парк самолётов
+│   │   └── service.html        # Услуги
+│   │
+│   ├── css/                    # Стили
+│   │   ├── index/              # Стили главной страницы
+│   │   │   ├── main-page.css
+│   │   │   └── arrivals-departures-table.css
+│   │   ├── about-us/           # Стили страницы "О нас"
+│   │   │   └── cards.css
+│   │   ├── fleet/              # Стили страницы "Флот"
+│   │   │   ├── main.css
+│   │   │   └── cards.css
+│   │   ├── service/            # Стили страницы "Услуги"
+│   │   │   └── cards.css
+│   │   ├── style.css           # Глобальные стили
+│   │   ├── nav.css             # Навигация
+│   │   └── footer.css          # Подвал
+│   │
+│   ├── js/                     # JavaScript модули
+│   │   ├── index/              # Логика главной страницы
+│   │   │   ├── config.js       # Конфигурация API
+│   │   │   ├── get-arrivals.js # Запрос рейсов прибытия
+│   │   │   └── get-departures.js # Запрос рейсов отправления
+│   │   ├── fleet/              # Логика страницы флота
+│   │   │   └── show-fleet.js
+│   │   ├── service/            # Логика страницы услуг
+│   │   │   └── show-service.js
+│   │   └── for-all/            # Общая логика
+│   │       └── connect.js      # Подключение компонентов
+│   │
+│   └── img/                    # Изображения и иконки
+│
+├── db.json                     # Mock-данные для JSON Server
+├── package.json                # Зависимости и скрипты
+└── README.md                   # Документация
+```
+
+---
+
+## 🔧 Доступные команды
+
+| Команда | Описание |
+|---------|----------|
+| `npm run start` | Запуск дев-сервера + JSON Server |
+| `npm run parcel` | Только Parcel dev-сервер |
+| `npm run server` | Только JSON Server (порт 3000) |
+| `npm run build` | Production-сборка проекта |
+
+---
+
+## 🌐 Функциональность
+
+### Главная страница (`/`)
+- Табло прилёта (Arrivals) с данными из API
+- Табло вылета (Departures) с данными из API
+- Информация о рейсах: номер, авиакомпания, время, статус
+
+### Страница "О нас" (`/html/about-us.html`)
+- Информация об авиакомпании
+- Карточки с ключевыми фактами
+
+### Страница "Флот" (`/html/fleet.html`)
+- Каталог воздушных судов
+- Карточки самолётов с характеристиками
+
+### Страница "Услуги" (`/html/service.html`)
+- Описание услуг авиакомпании
+- Информационные карточки
+
+---
+
+## 🔌 API Эндпоинты
+
+Проект использует локальный JSON Server со следующими эндпоинтами:
+
+| Эндпоинт | Метод | Описание |
+|----------|-------|----------|
+| `/arrivals/` | GET | Список рейсов прибытия |
+| `/departures/` | GET | Список рейсов отправления |
+
+Конфигурация API находится в `src/js/index/config.js`:
+```javascript
+{
+  API: {
+    BASE_URL: 'http://127.0.0.1:3000',
+    ENDPOINTS: {
+      ARRIVALS: '/arrivals/',
+      DEPARTURES: '/departures/'
+    },
+    TIMEOUT: 5000
+  }
+}
+```
+
+---
+
+## 📝 Примечания
+
+- Проект является учебным и создан в рамках образовательной программы
+- Данные в `db.json` являются демонстрационными
+- Для production-развёртывания требуется замена JSON Server на реальный бэкенд
+
+---
+
+## 👨‍💻 Автор
+
+Студент второго курса **ITStep Academy**
+
+---
+
+## 📄 Лицензия
+
+MIT License — свободно используйте код в учебных целях.
+
+---
+
+**Приятного полёта!** ✈️🌍
